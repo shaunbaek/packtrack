@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans text-navy antialiased;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-coral rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-coral-dark;
+}
+
+/* Typography utilities */
+.heading-1 {
+  @apply font-display font-bold text-4xl md:text-5xl lg:text-6xl tracking-tight;
+}
+
+.heading-2 {
+  @apply font-display font-bold text-3xl md:text-4xl tracking-tight;
+}
+
+.heading-3 {
+  @apply font-display font-semibold text-xl md:text-2xl;
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply bg-gradient-to-r from-coral to-coral-light bg-clip-text text-transparent;
+}
+
+/* Hero gradient background */
+.hero-gradient {
+  background: linear-gradient(135deg, #FF6B54 0%, #FF8A76 50%, #FFB39A 100%);
+}
+
+/* Card hover effect */
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+}
+
+/* Section padding */
+.section-padding {
+  @apply py-16 md:py-24 px-4 md:px-8;
+}

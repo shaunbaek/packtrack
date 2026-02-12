@@ -3,7 +3,7 @@ import { FileText, Video, ExternalLink } from 'lucide-react'
 
 const statusStyles = {
   completed: 'bg-emerald-100 text-emerald-700 border-emerald-200',
-  current: 'bg-amber-100 text-amber-700 border-amber-200',
+  current: 'bg-amber-100 text-amber-700 border-amber-200 badge-pulse',
   upcoming: 'bg-gray-100 text-gray-500 border-gray-200',
 }
 
@@ -21,8 +21,9 @@ export default function MilestoneCard({ milestone }) {
 
   return (
     <div className={`
-      relative bg-white rounded-2xl shadow-md p-6
-      border-l-4
+      group relative bg-white rounded-2xl shadow-md p-6
+      border-l-4 transition-all duration-300
+      hover:shadow-xl hover:-translate-y-1
       ${status === 'completed' ? 'border-l-emerald-500' :
         status === 'current' ? 'border-l-amber-500' : 'border-l-gray-300'}
       ${status === 'upcoming' ? 'opacity-60' : ''}
@@ -32,10 +33,11 @@ export default function MilestoneCard({ milestone }) {
         <div className="flex items-center gap-3">
           <div className={`
             w-12 h-12 rounded-xl flex items-center justify-center
+            transition-all duration-300 group-hover:scale-110
             ${status === 'completed' ? 'bg-emerald-100 text-emerald-600' :
               status === 'current' ? 'bg-amber-100 text-amber-600' : 'bg-gray-100 text-gray-400'}
           `}>
-            <IconComponent size={24} />
+            <IconComponent size={24} className="transition-transform duration-300" />
           </div>
           <div>
             <span className="text-sm font-semibold text-coral">{phase}</span>
@@ -77,7 +79,7 @@ export default function MilestoneCard({ milestone }) {
               href={deliverable.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-coral bg-coral/5 rounded-lg hover:bg-coral/10 transition-colors"
+              className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-coral bg-coral/5 rounded-lg hover:bg-coral/10 hover:scale-105 transition-all duration-200"
             >
               {deliverable.type === 'video' ? <Video size={16} /> :
                deliverable.type === 'pdf' ? <FileText size={16} /> : <ExternalLink size={16} />}

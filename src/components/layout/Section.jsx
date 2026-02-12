@@ -1,3 +1,5 @@
+import { RevealOnScroll } from '../../hooks/useScrollReveal'
+
 export default function Section({
   id,
   title,
@@ -19,18 +21,20 @@ export default function Section({
     >
       <div className="max-w-7xl mx-auto">
         {(title || subtitle) && (
-          <div className="text-center mb-12">
-            {title && (
-              <h2 className={`heading-2 mb-4 ${bgColor === 'coral' ? 'text-white' : 'text-navy'}`}>
-                {title}
-              </h2>
-            )}
-            {subtitle && (
-              <p className={`text-lg max-w-2xl mx-auto ${bgColor === 'coral' ? 'text-white/80' : 'text-slate'}`}>
-                {subtitle}
-              </p>
-            )}
-          </div>
+          <RevealOnScroll>
+            <div className="text-center mb-12">
+              {title && (
+                <h2 className={`heading-2 mb-4 ${bgColor === 'coral' ? 'text-white' : 'text-navy'}`}>
+                  {title}
+                </h2>
+              )}
+              {subtitle && (
+                <p className={`text-lg max-w-2xl mx-auto ${bgColor === 'coral' ? 'text-white/80' : 'text-slate'}`}>
+                  {subtitle}
+                </p>
+              )}
+            </div>
+          </RevealOnScroll>
         )}
         {children}
       </div>

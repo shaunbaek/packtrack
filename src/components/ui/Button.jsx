@@ -7,11 +7,11 @@ export default function Button({
   className = '',
   ...props
 }) {
-  const baseStyles = 'inline-flex items-center justify-center font-semibold rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2'
+  const baseStyles = 'inline-flex items-center justify-center font-semibold rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98]'
 
   const variants = {
-    primary: 'bg-coral text-white hover:bg-coral-dark focus:ring-coral shadow-lg hover:shadow-xl',
-    secondary: 'bg-navy text-white hover:bg-navy-light focus:ring-navy',
+    primary: 'bg-coral text-white hover:bg-coral-dark hover:shadow-xl focus:ring-coral shadow-lg',
+    secondary: 'bg-navy text-white hover:bg-navy-light hover:shadow-lg focus:ring-navy shadow-md',
     outline: 'border-2 border-coral text-coral hover:bg-coral hover:text-white focus:ring-coral',
     ghost: 'text-coral hover:bg-coral/10 focus:ring-coral',
   }

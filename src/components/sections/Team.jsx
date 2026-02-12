@@ -1,5 +1,6 @@
 import Section from '../layout/Section'
 import TeamMemberCard from '../ui/TeamMemberCard'
+import { RevealOnScroll } from '../../hooks/useScrollReveal'
 import { team } from '../../data/team'
 
 export default function Team() {
@@ -11,8 +12,10 @@ export default function Team() {
       bgColor="gray"
     >
       <div className="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
-        {team.map(member => (
-          <TeamMemberCard key={member.id} member={member} />
+        {team.map((member, index) => (
+          <RevealOnScroll key={member.id} delay={index * 100}>
+            <TeamMemberCard member={member} />
+          </RevealOnScroll>
         ))}
       </div>
     </Section>

@@ -105,18 +105,35 @@ export const milestones = [
     id: 'p4',
     phase: 'P4',
     title: 'Mid-Fi Prototype',
-    status: 'current',
+    status: 'completed',
     icon: 'Layout',
     description: 'Developing medium-fidelity prototypes with improved interaction design.',
-    takeaways: [],
-    deliverables: [],
+    takeaways: [
+      'Created interactive mid-fidelity prototype with 3 key user flows: equipment tracking, occupancy alerts, and zone checking',
+      'Flow 1: Equipment tracking with waitlist functionality, session summaries, and route mapping for gym navigation',
+      'Flow 2: Occupancy threshold alerts allowing users to set custom notifications when gym reaches desired capacity',
+      'Flow 3: Zone-specific occupancy checking with directional guidance for new gym-goers',
+      'Design system: Grayscale base with green/yellow/red status indicators for intuitive decision-making',
+    ],
+    visuals: [
+      {
+        id: 'p4-cover',
+        type: 'image',
+        url: '/assets/p4/cover-mockup.png',
+        caption: 'Mid-Fi Prototype: Equipment List and Occupancy Dashboard',
+        alt: 'Two phone mockups showing the PackTrack equipment list and occupancy features'
+      }
+    ],
+    deliverables: [
+      { name: 'Mid-Fi Prototype Report', type: 'pdf', url: '/documents/P4.pdf' }
+    ],
     image: null,
   },
   {
     id: 'a4',
     phase: 'A4',
     title: 'Heuristic Evaluation',
-    status: 'upcoming',
+    status: 'current',
     icon: 'ClipboardCheck',
     description: 'Evaluating the prototype against usability heuristics to identify issues.',
     takeaways: [],

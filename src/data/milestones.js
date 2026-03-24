@@ -48,7 +48,7 @@ export const milestones = [
       }
     ],
     deliverables: [
-      { name: 'User Research Report', type: 'pdf', url: '/documents/p2-user-research.pdf' }
+      { name: 'User Research Report', type: 'pdf', url: 'https://drive.google.com/file/d/1X52dWPY6MDAp8AOtaZ4fScbWPPpg9FfH/view?usp=sharing' }
     ],
     image: null,
   },
@@ -97,7 +97,7 @@ export const milestones = [
       ]
     },
     deliverables: [
-      { name: 'Ideation & Lo-Fi Report', type: 'pdf', url: '/documents/p3-ideation-lofi.pdf' }
+      { name: 'Ideation & Lo-Fi Report', type: 'pdf', url: 'https://drive.google.com/file/d/1mT4IDlsUEqkdIdfanUrl6EkUluZgFglF/view?usp=sharing' }
     ],
     image: null,
   },
@@ -125,7 +125,7 @@ export const milestones = [
       }
     ],
     deliverables: [
-      { name: 'Mid-Fi Prototype Report', type: 'pdf', url: '/documents/P4.pdf' }
+      { name: 'Mid-Fi Prototype Report', type: 'pdf', url: 'https://drive.google.com/file/d/1zyNpQV9C_JYGTC2So9g67WWeQw5S9LMD/view?usp=sharing' }
     ],
     image: null,
   },

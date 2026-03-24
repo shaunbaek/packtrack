@@ -35,20 +35,20 @@ export const milestones = [
       {
         id: 'empathy-gym',
         type: 'image',
-        url: '/packtrack/assets/p2/empathy-map-gym-goers.png',
+        url: '/assets/p2/empathy-map-gym-goers.png',
         caption: 'Empathy Map: Regular Gym Goers',
         alt: 'Empathy map showing feelings, behaviors, and pain points of frequent gym users'
       },
       {
         id: 'empathy-aspiring',
         type: 'image',
-        url: '/packtrack/assets/p2/empathy-map-aspiring.png',
+        url: '/assets/p2/empathy-map-aspiring.png',
         caption: 'Empathy Map: Aspiring Gym Goers',
         alt: 'Empathy map for students wanting to establish gym routines'
       }
     ],
     deliverables: [
-      { name: 'User Research Report', type: 'pdf', url: '/packtrack/documents/p2-user-research.pdf' }
+      { name: 'User Research Report', type: 'pdf', url: '/documents/p2-user-research.pdf' }
     ],
     image: null,
   },
@@ -69,21 +69,21 @@ export const milestones = [
       {
         id: 'affinity',
         type: 'image',
-        url: '/packtrack/assets/p3/affinity-diagram.png',
+        url: '/assets/p3/affinity-diagram.png',
         caption: 'Affinity Diagram: Clustered by UX/Usability, Data Collection, Collaboration, Enablement',
         alt: 'Affinity diagram showing grouped brainstorming ideas'
       },
       {
         id: 'lofi-home',
         type: 'image',
-        url: '/packtrack/assets/p3/lofi-home.png',
+        url: '/assets/p3/lofi-home.png',
         caption: 'Lo-Fi Prototype: Equipment List View',
         alt: 'Paper prototype showing equipment availability screen'
       },
       {
         id: 'lofi-occupancy',
         type: 'image',
-        url: '/packtrack/assets/p3/lofi-occupancy.png',
+        url: '/assets/p3/lofi-occupancy.png',
         caption: 'Lo-Fi Prototype: Gym Occupancy Dashboard',
         alt: 'Paper prototype of occupancy gauge and zone breakdown'
       },
@@ -97,7 +97,7 @@ export const milestones = [
       ]
     },
     deliverables: [
-      { name: 'Ideation & Lo-Fi Report', type: 'pdf', url: '/packtrack/documents/p3-ideation-lofi.pdf' }
+      { name: 'Ideation & Lo-Fi Report', type: 'pdf', url: '/documents/p3-ideation-lofi.pdf' }
     ],
     image: null,
   },

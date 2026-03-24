@@ -22,14 +22,33 @@ export const milestones = [
     id: 'p2',
     phase: 'P2',
     title: 'User Research',
-    status: 'current',
+    status: 'completed',
     icon: 'Users',
-    description: 'Conducting interviews and observations to understand student gym behaviors and pain points.',
+    description: 'Conducted interviews and observations to understand student gym behaviors and pain points at the WoodPEC.',
     takeaways: [
-      // Add takeaways after completing P2
+      'Conducted 6 user interviews: 2 frequent, 2 moderate, 2 aspiring gym-goers',
+      'Identified information gap as core barrier: students need to know gym status before committing to the trip',
+      'Peak hour paradox: users structurally locked into crowded windows by academic schedules',
+      'Key user needs: real-time info, specific equipment visibility, reduced decision anxiety',
+    ],
+    visuals: [
+      {
+        id: 'empathy-gym',
+        type: 'image',
+        url: '/packtrack/assets/p2/empathy-map-gym-goers.png',
+        caption: 'Empathy Map: Regular Gym Goers',
+        alt: 'Empathy map showing feelings, behaviors, and pain points of frequent gym users'
+      },
+      {
+        id: 'empathy-aspiring',
+        type: 'image',
+        url: '/packtrack/assets/p2/empathy-map-aspiring.png',
+        caption: 'Empathy Map: Aspiring Gym Goers',
+        alt: 'Empathy map for students wanting to establish gym routines'
+      }
     ],
     deliverables: [
-      // Add deliverables after completing P2
+      { name: 'User Research Report', type: 'pdf', url: '/packtrack/documents/p2-user-research.pdf' }
     ],
     image: null,
   },
@@ -37,18 +56,56 @@ export const milestones = [
     id: 'p3',
     phase: 'P3',
     title: 'Ideation & Lo-Fi Prototype',
-    status: 'upcoming',
+    status: 'completed',
     icon: 'Lightbulb',
-    description: 'Brainstorming solutions and creating initial low-fidelity prototypes for testing.',
-    takeaways: [],
-    deliverables: [],
+    description: 'Brainstormed solutions and created low-fidelity prototypes for usability testing.',
+    takeaways: [
+      'Brainstorming session generated 45+ ideas, consolidated via affinity mapping into 4 key themes',
+      'Created lo-fi prototypes for Equipment Tracking and Gym Occupancy features',
+      'Usability testing with 5 participants revealed strong equipment list UX but navigation issues in occupancy flow',
+      'Achieved SUS score of 69.0 ("Good" baseline) - identified key improvements for next iteration',
+    ],
+    visuals: [
+      {
+        id: 'affinity',
+        type: 'image',
+        url: '/packtrack/assets/p3/affinity-diagram.png',
+        caption: 'Affinity Diagram: Clustered by UX/Usability, Data Collection, Collaboration, Enablement',
+        alt: 'Affinity diagram showing grouped brainstorming ideas'
+      },
+      {
+        id: 'lofi-home',
+        type: 'image',
+        url: '/packtrack/assets/p3/lofi-home.png',
+        caption: 'Lo-Fi Prototype: Equipment List View',
+        alt: 'Paper prototype showing equipment availability screen'
+      },
+      {
+        id: 'lofi-occupancy',
+        type: 'image',
+        url: '/packtrack/assets/p3/lofi-occupancy.png',
+        caption: 'Lo-Fi Prototype: Gym Occupancy Dashboard',
+        alt: 'Paper prototype of occupancy gauge and zone breakdown'
+      },
+    ],
+    metrics: {
+      susScore: 69.0,
+      taskCompletionRates: [
+        { task: 'Check equipment availability', rate: 100, participants: 5 },
+        { task: 'Find least crowded zone', rate: 80, participants: 5 },
+        { task: 'Set capacity alert', rate: 60, participants: 5 },
+      ]
+    },
+    deliverables: [
+      { name: 'Ideation & Lo-Fi Report', type: 'pdf', url: '/packtrack/documents/p3-ideation-lofi.pdf' }
+    ],
     image: null,
   },
   {
     id: 'p4',
     phase: 'P4',
     title: 'Mid-Fi Prototype',
-    status: 'upcoming',
+    status: 'current',
     icon: 'Layout',
     description: 'Developing medium-fidelity prototypes with improved interaction design.',
     takeaways: [],

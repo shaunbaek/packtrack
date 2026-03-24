@@ -1,5 +1,7 @@
 import * as Icons from 'lucide-react'
 import { FileText, Video, ExternalLink } from 'lucide-react'
+import ImageGallery from './ImageGallery'
+import MetricsChart from './MetricsChart'
 
 const statusStyles = {
   completed: 'bg-emerald-100 text-emerald-700 border-emerald-200',
@@ -14,7 +16,7 @@ const statusLabels = {
 }
 
 export default function MilestoneCard({ milestone }) {
-  const { phase, title, status, icon, description, takeaways, deliverables } = milestone
+  const { phase, title, status, icon, description, takeaways, deliverables, visuals, metrics } = milestone
 
   // Dynamically get the icon component
   const IconComponent = Icons[icon] || Icons.Circle
@@ -67,6 +69,22 @@ export default function MilestoneCard({ milestone }) {
               </li>
             ))}
           </ul>
+        </div>
+      )}
+
+      {/* Visuals Gallery */}
+      {visuals && visuals.length > 0 && (
+        <div className="mt-6 pt-6 border-t border-gray-100">
+          <h4 className="text-sm font-semibold text-navy mb-4">Key Visuals</h4>
+          <ImageGallery visuals={visuals} />
+        </div>
+      )}
+
+      {/* Metrics Visualization */}
+      {metrics && (
+        <div className="mt-6 pt-6 border-t border-gray-100">
+          <h4 className="text-sm font-semibold text-navy mb-4">Usability Testing Results</h4>
+          <MetricsChart metrics={metrics} />
         </div>
       )}
 

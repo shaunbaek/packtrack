@@ -31,22 +31,6 @@ export const milestones = [
       'Peak hour paradox: users structurally locked into crowded windows by academic schedules',
       'Key user needs: real-time info, specific equipment visibility, reduced decision anxiety',
     ],
-    visuals: [
-      {
-        id: 'empathy-gym',
-        type: 'image',
-        url: '/assets/p2/empathy-map-gym-goers.png',
-        caption: 'Empathy Map: Regular Gym Goers',
-        alt: 'Empathy map showing feelings, behaviors, and pain points of frequent gym users'
-      },
-      {
-        id: 'empathy-aspiring',
-        type: 'image',
-        url: '/assets/p2/empathy-map-aspiring.png',
-        caption: 'Empathy Map: Aspiring Gym Goers',
-        alt: 'Empathy map for students wanting to establish gym routines'
-      }
-    ],
     deliverables: [
       { name: 'User Research Report', type: 'pdf', url: 'https://drive.google.com/file/d/1X52dWPY6MDAp8AOtaZ4fScbWPPpg9FfH/view?usp=sharing' }
     ],
@@ -64,29 +48,6 @@ export const milestones = [
       'Created lo-fi prototypes for Equipment Tracking and Gym Occupancy features',
       'Usability testing with 5 participants revealed strong equipment list UX but navigation issues in occupancy flow',
       'Achieved SUS score of 69.0 ("Good" baseline) - identified key improvements for next iteration',
-    ],
-    visuals: [
-      {
-        id: 'affinity',
-        type: 'image',
-        url: '/assets/p3/affinity-diagram.png',
-        caption: 'Affinity Diagram: Clustered by UX/Usability, Data Collection, Collaboration, Enablement',
-        alt: 'Affinity diagram showing grouped brainstorming ideas'
-      },
-      {
-        id: 'lofi-home',
-        type: 'image',
-        url: '/assets/p3/lofi-home.png',
-        caption: 'Lo-Fi Prototype: Equipment List View',
-        alt: 'Paper prototype showing equipment availability screen'
-      },
-      {
-        id: 'lofi-occupancy',
-        type: 'image',
-        url: '/assets/p3/lofi-occupancy.png',
-        caption: 'Lo-Fi Prototype: Gym Occupancy Dashboard',
-        alt: 'Paper prototype of occupancy gauge and zone breakdown'
-      },
     ],
     metrics: {
       susScore: 69.0,
@@ -114,15 +75,6 @@ export const milestones = [
       'Flow 2: Occupancy threshold alerts allowing users to set custom notifications when gym reaches desired capacity',
       'Flow 3: Zone-specific occupancy checking with directional guidance for new gym-goers',
       'Design system: Grayscale base with green/yellow/red status indicators for intuitive decision-making',
-    ],
-    visuals: [
-      {
-        id: 'p4-cover',
-        type: 'image',
-        url: '/assets/p4/cover-mockup.png',
-        caption: 'Mid-Fi Prototype: Equipment List and Occupancy Dashboard',
-        alt: 'Two phone mockups showing the PackTrack equipment list and occupancy features'
-      }
     ],
     deliverables: [
       { name: 'Mid-Fi Prototype Report', type: 'pdf', url: 'https://drive.google.com/file/d/1zyNpQV9C_JYGTC2So9g67WWeQw5S9LMD/view?usp=sharing' }

@@ -4,6 +4,8 @@ import VideoEmbed from '../ui/VideoEmbed'
 import { RevealOnScroll } from '../../hooks/useScrollReveal'
 import { milestones } from '../../data/milestones'
 
+const DEMO_VIDEO_DRIVE_ID = '1g5UDaFMn7em9XORIPmiDBKXXTprSacRl'
+
 export default function Process() {
   // Find P1 milestone for the pitch video
   const p1 = milestones.find(m => m.id === 'p1')
@@ -55,15 +57,12 @@ export default function Process() {
         </div>
       </div>
 
-      {/* Final Demo Placeholder */}
+      {/* Final Demo */}
       <RevealOnScroll delay={100}>
         <div className="mt-16 pt-16 border-t border-gray-200">
           <h3 className="heading-3 text-navy text-center mb-6">Final Demo</h3>
           <div className="max-w-3xl mx-auto">
-            <VideoEmbed youtubeId="" title="PackTrack Final Demo" />
-            <p className="text-center text-slate mt-4">
-              The final demo video will be added upon completion of P6.
-            </p>
+            <VideoEmbed driveId={DEMO_VIDEO_DRIVE_ID} title="PackTrack Final Demo" />
           </div>
         </div>
       </RevealOnScroll>

@@ -1,5 +1,11 @@
-export default function VideoEmbed({ youtubeId, title }) {
-  if (!youtubeId) {
+export default function VideoEmbed({ youtubeId, driveId, title }) {
+  const src = youtubeId
+    ? `https://www.youtube.com/embed/${youtubeId}`
+    : driveId
+      ? `https://drive.google.com/file/d/${driveId}/preview`
+      : null
+
+  if (!src) {
     return (
       <div className="aspect-video bg-gray-100 rounded-xl flex items-center justify-center">
         <p className="text-slate">Video coming soon</p>
@@ -12,7 +18,7 @@ export default function VideoEmbed({ youtubeId, title }) {
       <iframe
         width="100%"
         height="100%"
-        src={`https://www.youtube.com/embed/${youtubeId}`}
+        src={src}
         title={title}
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -10,19 +10,20 @@ export default function ImageGallery({ visuals, columns = 2 }) {
     <>
       <div className={`grid gap-4 grid-cols-1 ${columns === 2 ? 'md:grid-cols-2' : 'md:grid-cols-3'}`}>
         {visuals.map((visual) => (
-          <div
-            key={visual.id}
-            className="group cursor-pointer"
-            onClick={() => setLightboxImage(visual)}
-          >
-            <div className="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+          <div key={visual.id} className="group">
+            <button
+              type="button"
+              onClick={() => setLightboxImage(visual)}
+              aria-label={`Open larger view: ${visual.alt}`}
+              className="block w-full overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-offset-2"
+            >
               <img
                 src={visual.url}
                 alt={visual.alt}
                 className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
               />
-            </div>
+            </button>
             {visual.caption && (
               <p className="text-sm text-slate mt-2 text-center">
                 {visual.caption}

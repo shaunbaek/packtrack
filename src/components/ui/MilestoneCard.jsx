@@ -42,7 +42,7 @@ export default function MilestoneCard({ milestone }) {
             <IconComponent size={24} className="transition-transform duration-300" />
           </div>
           <div>
-            <span className="text-sm font-semibold text-coral">{phase}</span>
+            <span className="text-sm font-semibold text-coral-deep">{phase}</span>
             <h3 className="font-display font-bold text-xl text-navy">{title}</h3>
           </div>
         </div>
@@ -97,7 +97,7 @@ export default function MilestoneCard({ milestone }) {
               href={deliverable.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-coral bg-coral/5 rounded-lg hover:bg-coral/10 hover:scale-105 transition-all duration-200"
+              className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-coral-deep bg-coral/5 rounded-lg hover:bg-coral/10 hover:scale-105 transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-offset-2"
             >
               {deliverable.type === 'video' ? <Video size={16} /> :
                deliverable.type === 'pdf' ? <FileText size={16} /> : <ExternalLink size={16} />}

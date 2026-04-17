@@ -22,7 +22,7 @@ export default function TeamMemberCard({ member }) {
 
       {/* Info */}
       <h3 className="font-display font-bold text-lg text-navy">{name}</h3>
-      <p className="text-coral font-medium text-sm mb-2">{role}</p>
+      <p className="text-coral-deep font-medium text-sm mb-2">{role}</p>
       {bio && <p className="text-slate text-sm">{bio}</p>}
     </div>
   )

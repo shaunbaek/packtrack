@@ -115,7 +115,7 @@ export const milestones = [
       'Deliberate tradeoff: hardcoded gym data and deferred pinch-to-zoom map (Severity 2) to validate core user flows rather than polish edge cases',
     ],
     deliverables: [
-      { name: 'Final Report', type: 'pdf', url: 'https://drive.google.com/file/d/1kUA5N6myiv6lvXQtxdQiti4tJvck4kGq/view?usp=sharing' },
+      { name: 'Final Report', type: 'pdf', url: 'https://drive.google.com/file/d/1X2K2hNHsRy5f-tuSrgkO99sGgiDDSG0P/view?usp=sharing' },
       { name: 'GitHub Repository', type: 'link', url: 'https://github.com/DesignStudio-HCI-Spring2026/p5-finalprototype-group3' }
     ],
     image: null,

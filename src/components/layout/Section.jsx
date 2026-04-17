@@ -14,9 +14,12 @@ export default function Section({
     coral: 'hero-gradient text-white',
   }
 
+  const headingId = title ? `${id}-heading` : undefined
+
   return (
     <section
       id={id}
+      aria-labelledby={headingId}
       className={`section-padding ${bgClasses[bgColor]} ${className}`}
     >
       <div className="max-w-7xl mx-auto">
@@ -24,7 +27,7 @@ export default function Section({
           <RevealOnScroll>
             <div className="text-center mb-12">
               {title && (
-                <h2 className={`heading-2 mb-4 ${bgColor === 'coral' ? 'text-white' : 'text-navy'}`}>
+                <h2 id={headingId} className={`heading-2 mb-4 ${bgColor === 'coral' ? 'text-white' : 'text-navy'}`}>
                   {title}
                 </h2>
               )}

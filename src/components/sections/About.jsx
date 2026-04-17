@@ -36,7 +36,7 @@ export default function About() {
         {/* Problem Statement */}
         <RevealOnScroll>
           <div>
-            <div className="bg-coral/5 border-l-4 border-coral rounded-r-xl p-6 mb-6 transition-all duration-300 hover:bg-coral/10">
+            <div className="bg-coral/10 border-l-4 border-coral rounded-r-xl p-6 mb-6 transition-all duration-300 hover:bg-coral/15">
               <h3 className="font-display font-bold text-lg text-navy mb-2">The Reality</h3>
               <p className="text-slate">
                 Students rush to the WoodPEC during their only free window, hoping for an

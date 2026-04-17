@@ -10,6 +10,7 @@ export default {
         coral: {
           DEFAULT: '#FF6B54',
           dark: '#E85A44',
+          deep: '#C44D35',
           light: '#FF8A76',
           lighter: '#FFB39A',
         },
